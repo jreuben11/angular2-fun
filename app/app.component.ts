@@ -64,6 +64,7 @@ import {HeroDetailComponent} from './hero-detail.component';
       <my-hero-detail [hero]="selectedHero"></my-hero-detail>
     `,
     directives: [HeroDetailComponent]
+    
 })
 export class AppComponent {
   public title = 'Tour of Heroes';
