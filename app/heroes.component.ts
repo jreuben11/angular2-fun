@@ -5,7 +5,6 @@ import {HeroService} from './hero.service';
 import {OnInit} from 'angular2/core';
 
 @Component({
-    selector: 'my-heroes',
     styles:[`
       .selected {
         background-color: #CFD8DC !important;
@@ -55,7 +54,7 @@ import {OnInit} from 'angular2/core';
       }
     `],
     template: `
-    
+
       <h2>My Heroes</h2>
       <ul class="heroes">
         <li *ngFor="#hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
